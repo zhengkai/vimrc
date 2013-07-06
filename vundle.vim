@@ -7,7 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'JavaScript-syntax'
 Bundle 'jQuery'
-Bundle 'supertab'
+Bundle 'ervandew/supertab'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'kana/vim-fakeclip'
 Bundle 'kien/ctrlp.vim'

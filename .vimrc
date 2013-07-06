@@ -26,7 +26,7 @@ so ~/.vim/complete.vim
 so ~/.vim/style.vim
 
 " 状态栏
-so ~/oldvimrc/statusbar.vim
+so ~/.vim/statusbar.vim
 
 so ~/.vim/json_2_phparray.vim
 so ~/.vim/format.vim
