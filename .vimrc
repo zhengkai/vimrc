@@ -1,16 +1,14 @@
 so ~/.vim/vundle.vim
 
 " 识别 Alt 键
-map <m-a> ggVG
-map <m-b> ggVG
-set <m-b>=b
-"so ~/.vim/escalt.vim
 set ttimeoutlen=1
-" for UseAlt in range (65 , 90 ) + range ( 97 , 122)
-"         exe "set <M-" .nr2char(UseAlt).">=\<Esc>".nr2char(UseAlt)
-" endfor
+for UseAlt in range (65 , 90 ) + range ( 97 , 122)
+	exe "set <M-" .nr2char(UseAlt).">=\<Esc>".nr2char(UseAlt)
+endfor
 
-set timeout ttimeoutlen=50
+nmap <M-w> :silent! set invwrap<CR>
+
+" set timeout ttimeoutlen=50
 
 set novisualbell
 set clipboard=unnamedplus
@@ -18,6 +16,10 @@ set clipboard=unnamedplus
 set pastetoggle=<F10>
 
 set nobomb
+set nowrap
+
+set autowrite
+set nofoldenable
 
 " 自动完成
 so ~/.vim/complete.vim
@@ -32,6 +34,11 @@ so ~/.vim/json_2_phparray.vim
 so ~/.vim/format.vim
 so ~/.vim/pair_complete.vim
 so ~/.vim/tabline.vim
+
+" 新建 PHP 文件模版
+au BufNewFile *.php 0r ~/.vim/tpl/php|call cursor(2,0)
+au BufNewFile *.html 0r ~/.vim/tpl/html|call cursor(8,0)
+au BufNewFile *.sh 0r ~/.vim/tpl/sh|call cursor(2,0)
 
 " 缩进
 set si
@@ -49,7 +56,7 @@ command WQ wq
 command Q q
 nmap <F1> <nop>
 nmap <F3> <ESC>:%s/<C-v><C-m>//g<Enter>
-nmap <M-C> <ESC>:wq!<Enter>
+nmap <M-c> <ESC>:wq!<Enter>
 
 " 切换窗口
 nmap q <C-W>w
@@ -64,23 +71,11 @@ nmap } /{<CR>
 " 使之前的单词字母大写
 map! <C-F> <Esc>gUiw`]a
 
-" nmap <C-K> 10<C-Y>
-" nmap <C-J> 10<C-E>
-
-let g:yankring_replace_n_pkey = '<C-j>'
-let g:yankring_replace_n_nkey = '<C-k>'
-
 " X 粘贴 ( Ctrl + P )
 nmap <C-P> "*P
 
 " 帮助 ( Ctrl + 2 )
 nmap <C-@> <ESC>:vert bo help<Space>
-
-" .zhengkai 文件高亮
-au BufRead,BufNewFile .zhengkai,.zhengkai_alias set filetype=sh
-
-imap <F3> <ESC>
-set nowrap
 
 " CtrlP
 let g:ctrlp_cmd = 'CtrlPMRU'
@@ -93,3 +88,8 @@ let g:ctrlp_custom_ignore = {
 " tComment
 nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
+
+" YankRing
+
+let g:yankring_replace_n_pkey = '<C-j>'
+let g:yankring_replace_n_nkey = '<C-k>'

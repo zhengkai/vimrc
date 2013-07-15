@@ -3,11 +3,8 @@ function! FileSize()
 	return ' [filesize=' . bytes . ']'
 endfunction
 
-"set clipboard=unnamed
-"set clipboard=unnamedplus
-
 set statusline=%{fnamemodify(bufname('%'),':p')}\ \ \    "tail of the filename
-set statusline+=%P\ %4l\ \ \   "percent through file
+"set statusline+=%P\ %4l\ \ \   "percent through file
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}]   "file format
 set statusline+=\ %m      "modified flag
@@ -17,4 +14,3 @@ set statusline+=%{FileSize()}
 set statusline+=\ %h      "help file flag
 "set statusline+=%=      "left/right separator
 set statusline+=[\ X\ =\ %c\,\ Y\ =\ %l\ /\ %L\ ]     "cursor column
-

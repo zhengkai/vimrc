@@ -13,6 +13,6 @@ function RemoveTrailingWhitespace()
 endfunction
 
 " UNIX 换行
-au FileType php,sh,javascript,css,text,html,dosini,vim,gitconfig,conf au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
-au FileType php,sh,javascript,css,text,html,dosini,vim,gitconfig,conf,mkd silent! set fileformat=unix
+au FileType php,sh,javascript,css,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
+au FileType php,sh,javascript,css,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
 au FileType go au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace() | silent! Fmt

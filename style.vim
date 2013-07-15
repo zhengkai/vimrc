@@ -51,6 +51,7 @@ hi phpClassesTag cterm=bold ctermfg=219
 hi phpFunctionsTag cterm=bold ctermfg=75
 hi phpSpecial ctermfg=123
 hi Statement ctermfg=228 cterm=none
+hi phpSpecialFunction ctermfg=45
 hi Type ctermfg=228 cterm=none
 hi phpClassesTag cterm=none
 
