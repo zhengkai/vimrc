@@ -1,5 +1,11 @@
 so ~/.vim/vundle.vim
 
+" 记住上一次的位置
+au BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\ exe "normal g`\"" |
+	\ endif
+
 " 识别 Alt 键
 set ttimeoutlen=1
 for UseAlt in range (65 , 90 ) + range ( 97 , 122)
@@ -93,3 +99,11 @@ vnoremap // :TComment<CR>
 
 let g:yankring_replace_n_pkey = '<C-j>'
 let g:yankring_replace_n_nkey = '<C-k>'
+
+" Tango
+
+so ~/.vim/tango.vim
+let g:tango_dir += [["/www/tango/www","/www/tango/tpl"]]
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
