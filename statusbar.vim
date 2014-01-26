@@ -3,7 +3,8 @@ function! FileSize()
 	return ' [filesize=' . bytes . ']'
 endfunction
 
-set statusline=%{fnamemodify(bufname('%'),':p')}\ \ \    "tail of the filename
+" set statusline=%{fnamemodify(bufname('%'),':p')}\ \ \    "tail of the filename
+set statusline=\ \  "tail of the filename
 "set statusline+=%P\ %4l\ \ \   "percent through file
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}]   "file format

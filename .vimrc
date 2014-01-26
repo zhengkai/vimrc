@@ -7,10 +7,10 @@ au BufReadPost *
 	\ endif
 
 " 识别 Alt 键
-set ttimeoutlen=1
-for UseAlt in range (65 , 90 ) + range ( 97 , 122)
-	exe "set <M-" .nr2char(UseAlt).">=\<Esc>".nr2char(UseAlt)
-endfor
+"set ttimeoutlen=1
+"for UseAlt in range (65 , 90 ) + range ( 97 , 122)
+"	exe "set <M-" .nr2char(UseAlt).">=\<Esc>".nr2char(UseAlt)
+"endfor
 
 nmap <M-w> :silent! set invwrap<CR>
 
@@ -99,11 +99,12 @@ vnoremap // :TComment<CR>
 
 let g:yankring_replace_n_pkey = '<C-j>'
 let g:yankring_replace_n_nkey = '<C-k>'
+let g:yankring_history_dir = '~/.tmp'
 
 " Tango
 
 so ~/.vim/tango.vim
-let g:tango_dir += [["/www/tango/www","/www/tango/tpl"]]
+let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/']]
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1

@@ -45,6 +45,8 @@ hi LineNr   ctermbg=233 ctermfg=246
 hi ColorColumn ctermbg=233 guibg=#121212
 let &colorcolumn="81,".join(range(120,999),",")
 
+" 118
+
 hi phpComment ctermfg=141 ctermbg=16
 hi phpFunctions ctermfg=45
 hi phpClassesTag cterm=bold ctermfg=219

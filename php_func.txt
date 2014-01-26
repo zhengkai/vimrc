@@ -68,6 +68,7 @@ argv
 array
 array_change_key_case
 array_chunk
+array_column
 array_combine
 array_count_values
 array_diff
@@ -3100,6 +3101,7 @@ xmlwriter_write_pi
 xmlwriter_write_raw
 xor
 YESEXPR
+yield
 ZEND_DEBUG_BUILD
 zend_logo_guid
 ZEND_THREAD_SAFE

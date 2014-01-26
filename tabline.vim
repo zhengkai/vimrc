@@ -15,7 +15,7 @@ function MyTabLine()
     let s .= '%' . (i + 1) . 'T'
 
     " MyTabLabel() 提供标签
-    let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
+    let s .= ' %m %{MyTabLabel(' . (i + 1) . ')} '
   endfor
 
   " 最后一个标签页之后用 TabLineFill 填充并复位标签页号
@@ -32,5 +32,5 @@ endfunction
 function MyTabLabel(n)
   let buflist = tabpagebuflist(a:n)
   let winnr = tabpagewinnr(a:n)
-  return bufname(buflist[winnr - 1])
+  return fnamemodify(bufname(buflist[winnr - 1]), ":p")
 endfunction

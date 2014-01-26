@@ -2,6 +2,9 @@
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 au BufRead,BufNewFile nginx.conf setfiletype nginx
 
+" PHP
+au FileType php setlocal keywordprg=pman
+
 " .zhengkai 文件高亮
 au BufRead,BufNewFile .zhengkai,.zhengkai_alias setfiletype sh
 

@@ -1,4 +1,4 @@
-nmap <M-l> :call TangoSwtich()<CR>
+nmap <F2> :call TangoSwtich()<CR>
 
 if exists("g:tango_switch")
 	finish
