@@ -13,3 +13,9 @@ au BufRead,BufNewFile *.sql set filetype=mysql
 
 " CSS in SuperTab
 au FileType css,less let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+" csv
+au BufRead,BufNewFile *.csv set filetype=csv
+
+" csv
+au BufRead,BufNewFile *.less set filetype=less
