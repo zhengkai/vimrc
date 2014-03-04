@@ -7,12 +7,8 @@ au BufReadPost *
 	\ endif
 
 " 识别 Alt 键
-"set ttimeoutlen=1
-"for UseAlt in range (65 , 90 ) + range ( 97 , 122)
-"	exe "set <M-" .nr2char(UseAlt).">=\<Esc>".nr2char(UseAlt)
-"endfor
-
-nmap <M-w> :silent! set invwrap<CR>
+"so ~/.vim/escalt.vim
+"nmap <M-w> <Esc>:silent! set invwrap<CR>
 
 " set timeout ttimeoutlen=50
 
@@ -84,7 +80,7 @@ nmap <C-P> "*P
 nmap <C-@> <ESC>:vert bo help<Space>
 
 " CtrlP
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|mp3|gz|jpg|png|zip|swp|bmp|gif|rar|cue|flac)$',
@@ -92,8 +88,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " tComment
-nnoremap // :TComment<CR>
-vnoremap // :TComment<CR>
+"nnoremap // :TComment<CR>
+"vnoremap // :TComment<CR>
 
 " YankRing
 

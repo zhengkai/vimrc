@@ -1,7 +1,9 @@
 
 set ruler
 set showcmd
+
 set incsearch
+set hlsearch
 
 set tabstop=4
 set shiftwidth=4
@@ -25,6 +27,8 @@ hi clear
 
 colorscheme desert256
 " colorscheme graywh
+
+hi Search cterm=NONE ctermfg=015 ctermbg=006
 
 hi normal ctermfg=255
 
@@ -69,7 +73,6 @@ hi SpecialKey cterm=none ctermfg=240 ctermbg=16
 hi SignColumn ctermbg=235
 
 hi phpFunctionsTag cterm=none
-hi Search ctermbg=237
 
 "diff
 
