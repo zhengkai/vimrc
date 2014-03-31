@@ -16,6 +16,7 @@ Bundle 'Markdown'
 Bundle 'YankRing.vim'
 Bundle 'fugitive.vim'
 Bundle 'groenewege/vim-less'
+Bundle 'jnwhiteh/vim-golang'
 " Bundle 'Shougo/neocomplcache.vim'
 
 filetype plugin indent on

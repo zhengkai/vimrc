@@ -88,8 +88,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " tComment
-"nnoremap // :TComment<CR>
-"vnoremap // :TComment<CR>
+" nnoremap // :TComment<CR>
+" vnoremap // :TComment<CR>
 
 " YankRing
 
@@ -100,7 +100,7 @@ let g:yankring_history_dir = '~/.tmp'
 " Tango
 
 so ~/.vim/tango.vim
-let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/']]
+let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/'], ['/www/ziak/www/','/www/ziak/tpl/']]
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
