@@ -9,8 +9,8 @@ au BufReadPost *
 nnoremap <F4> "=strftime("%F %T")<CR>Pl
 inoremap <F4> <C-R>=strftime("%F %T")<CR>
 
-nnoremap <C-w> iZheng Kai <zhengkai@gmail.com><Esc>l
-inoremap <C-w> Zheng Kai <zhengkai@gmail.com>
+nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
+inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 
 " 识别 Alt 键
 "so ~/.vim/escalt.vim
