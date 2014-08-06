@@ -502,7 +502,7 @@ syn keyword phpStructure trait
 
 " highlight constant E_STRICT
 syntax case match
-syntax keyword phpCoreConstant E_STRICT contained
+syntax keyword phpCoreConstant E_STRICT E_RECOVERABLE_ERROR E_DEPRECATED E_USER_DEPRECATED contained
 syntax case ignore
 
 " different syntax highlighting for 'echo', 'print', 'switch', 'die' and 'list' keywords
