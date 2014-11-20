@@ -18,6 +18,8 @@ inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 
 " set timeout ttimeoutlen=50
 
+ let Tlist_Use_Right_Window = 1
+
 set novisualbell
 set clipboard=unnamedplus
 
@@ -63,7 +65,8 @@ command W w
 command WQ wq
 command Q q
 nmap <F1> <nop>
-nmap <F3> <ESC>:%s/<C-v><C-m>//g<Enter>
+nnoremap <silent> <F3> :TagbarToggle<CR>
+nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
 nmap <M-c> <ESC>:wq!<Enter>
 
 " 切换窗口
@@ -106,7 +109,7 @@ let g:yankring_history_dir = '~/.tmp'
 " Tango
 
 so ~/.vim/tango.vim
-let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/'], ['/www/ziak/www/','/www/ziak/tpl/']]
+let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/'], ['/www/happycook_web/www/','/www/happycook_web/tpl/']]
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
