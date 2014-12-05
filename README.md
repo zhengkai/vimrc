@@ -1,2 +1,7 @@
-    git clone git@github.com:zhengkai/vimrc.git ~/.vim
-	ln -s ~/.vim/.vimrc ~/.vimrc
+    git clone https://github.com/zhengkai/vimrc.git ~/.vim
+	mkdir ~/.tmp
+	ln -s ~/.vim/.vimrc ~/
+	cd ~/.vim
+    git submodule init
+    git submodule update
+	vim +BundleInstall
