@@ -1,3 +1,7 @@
+set nocompatible
+set backspace=indent,eol,start
+syntax on
+
 so ~/.vim/vundle.vim
 
 " 记住上一次的位置
@@ -18,7 +22,7 @@ inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 
 " set timeout ttimeoutlen=50
 
- let Tlist_Use_Right_Window = 1
+let Tlist_Use_Right_Window = 1
 
 set novisualbell
 set clipboard=unnamedplus
