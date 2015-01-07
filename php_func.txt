@@ -1218,7 +1218,6 @@ is_string
 is_subclass_of
 is_uploaded_file
 is_writable
-is_writeable
 iterator_apply
 iterator_count
 iterator_to_array
