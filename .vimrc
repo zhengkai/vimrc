@@ -113,7 +113,7 @@ let g:yankring_history_dir = '~/.tmp'
 " Tango
 
 so ~/.vim/tango.vim
-let g:tango_dir += [["/www/tango/www","/www/tango/tpl"], ['/www/kt/www/','/www/kt/tpl/'], ['/www/happycook_web/www/','/www/happycook_web/tpl/']]
+let g:tango_dir += [['/www/tango/www', '/www/tango/tpl'], ['/www/kt/www/', '/www/kt/tpl/'], ['/www/core/www/', '/www/core/tpl/'], ['/www/soulogic/www/', '/www/soulogic/tpl/']]
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
