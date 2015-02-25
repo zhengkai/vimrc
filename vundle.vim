@@ -20,5 +20,6 @@ Bundle 'jnwhiteh/vim-golang'
 " Bundle 'Shougo/neocomplcache.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'KabbAmine/zeavim.vim'
+Bundle 'ashisha/image.vim'
 
 filetype plugin indent on
