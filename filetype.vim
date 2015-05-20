@@ -1,6 +1,6 @@
 " nginx
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
-au BufRead,BufNewFile nginx.conf setfiletype nginx
+au BufRead,BufNewFile nginx.conf,vhost.conf setfiletype nginx
 
 " PHP
 au FileType php setlocal keywordprg=pman

@@ -21,5 +21,6 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'majutsushi/tagbar'
 Bundle 'KabbAmine/zeavim.vim'
 Bundle 'ashisha/image.vim'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on
