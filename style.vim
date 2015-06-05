@@ -25,7 +25,7 @@ set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 
 hi clear
 
-colorscheme desert256
+silent! colorscheme desert256
 " colorscheme graywh
 
 hi Search cterm=NONE ctermfg=015 ctermbg=006
