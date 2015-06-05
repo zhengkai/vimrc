@@ -20,7 +20,9 @@ Bundle 'jnwhiteh/vim-golang'
 " Bundle 'Shougo/neocomplcache.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'KabbAmine/zeavim.vim'
-Bundle 'ashisha/image.vim'
+if has("python")
+	Bundle 'ashisha/image.vim'
+endif
 Bundle 'fatih/vim-go'
 Bundle 'rkitover/vimpager'
 
