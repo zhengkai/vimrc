@@ -25,5 +25,6 @@ if has("python")
 endif
 Bundle 'fatih/vim-go'
 Bundle 'rkitover/vimpager'
+Bundle 'editorconfig/editorconfig-vim'
 
 filetype plugin indent on

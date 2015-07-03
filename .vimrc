@@ -4,6 +4,8 @@ syntax on
 
 so ~/.vim/vundle.vim
 
+let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
+
 " 记住上一次的位置
 au BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
