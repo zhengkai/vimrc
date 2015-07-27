@@ -1,9 +1,10 @@
 set nocompatible
 set backspace=indent,eol,start
-syntax on
 
 so ~/.vim/vundle.vim
 
+syntax on
+let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 
 " 记住上一次的位置

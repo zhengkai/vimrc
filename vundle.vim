@@ -26,5 +26,6 @@ endif
 Bundle 'fatih/vim-go'
 Bundle 'rkitover/vimpager'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'easymotion/vim-easymotion'
 
 filetype plugin indent on
