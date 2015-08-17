@@ -19,3 +19,6 @@ au BufRead,BufNewFile *.csv set filetype=csv
 
 " csv
 au BufRead,BufNewFile *.less set filetype=less
+
+" hosts
+au BufRead,BufNewFile hosts set filetype=hosts
