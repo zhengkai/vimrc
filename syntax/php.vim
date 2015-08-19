@@ -503,6 +503,9 @@ syn keyword phpStructure trait
 " highlight constant E_STRICT
 syntax case match
 syntax keyword phpCoreConstant E_STRICT E_RECOVERABLE_ERROR E_DEPRECATED E_USER_DEPRECATED contained
+syntax keyword phpCoreConstant SORT_REGULAR SORT_NUMERIC SORT_STRING SORT_LOCALE_STRING contained
+syntax keyword phpCoreConstant JSON_HEX_QUOT JSON_HEX_TAG JSON_HEX_AMP JSON_HEX_APOS JSON_NUMERIC_CHECK JSON_PRETTY_PRINT JSON_UNESCAPED_SLASHES JSON_FORCE_OBJECT JSON_PRESERVE_ZERO_FRACTION JSON_UNESCAPED_UNICODE JSON_PARTIAL_OUTPUT_ON_ERROR contained
+syntax keyword phpCoreConstant FILE_USE_INCLUDE_PATH FILE_APPEND contained
 syntax case ignore
 
 " different syntax highlighting for 'echo', 'print', 'switch', 'die' and 'list' keywords
