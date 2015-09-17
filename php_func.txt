@@ -1938,6 +1938,12 @@ ob_implicit_flush
 ob_list_handlers
 ob_start
 octdec
+opcache_compile_file
+opcache_get_configuration
+opcache_get_status
+opcache_invalidate
+opcache_is_script_cached
+opcache_reset
 opendir
 openlog
 OPENSSL_ALGO_DSS1

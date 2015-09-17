@@ -53,9 +53,9 @@ so ~/.vim/pair_complete.vim
 so ~/.vim/tabline.vim
 
 " 新建 PHP 文件模版
-au BufNewFile *.php 0r ~/.vim/tpl/php|call cursor(2,0)
-au BufNewFile *.html 0r ~/.vim/tpl/html|call cursor(8,0)
-au BufNewFile *.sh 0r ~/.vim/tpl/sh|call cursor(2,0)
+au BufNewFile *.php silent! 0r ~/.vim/tpl/php|call cursor(2,0)
+au BufNewFile *.html silent! 0r ~/.vim/tpl/html|call cursor(8,0)
+au BufNewFile *.sh silent! 0r ~/.vim/tpl/sh|call cursor(2,0)
 
 " 缩进
 set si
@@ -116,7 +116,7 @@ let g:yankring_history_dir = '~/.tmp'
 " Tango
 
 so ~/.vim/tango.vim
-let g:tango_dir += [['/www/tango/www', '/www/tango/tpl'], ['/www/kt/www/', '/www/kt/tpl/'], ['/www/core/www/', '/www/core/tpl/'], ['/www/soulogic/www/', '/www/soulogic/tpl/']]
+let g:tango_dir += ['/www/']
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
