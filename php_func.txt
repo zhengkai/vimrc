@@ -676,6 +676,7 @@ ereg
 ereg_replace
 eregi
 eregi_replace
+error_clear_last
 error_get_last
 error_log
 error_reporting
