@@ -2023,6 +2023,10 @@ ord
 ORIG_PATH_INFO
 output_add_rewrite_var
 output_reset_rewrite_vars
+password_get_info
+password_hash
+password_needs_rehash
+password_verify
 pack
 parse_ini_file
 parse_ini_string
