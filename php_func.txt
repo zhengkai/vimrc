@@ -765,6 +765,8 @@ FILTER_FLAG_STRIP_LOW
 FILTER_FORCE_ARRAY
 filter_has_var
 filter_id
+filter_var
+filter_var_array
 filter_input
 filter_input_array
 filter_list
@@ -789,8 +791,6 @@ FILTER_VALIDATE_INT
 FILTER_VALIDATE_IP
 FILTER_VALIDATE_REGEXP
 FILTER_VALIDATE_URL
-filter_var
-filter_var_array
 final
 finfo_buffer
 finfo_close
