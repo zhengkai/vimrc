@@ -90,7 +90,7 @@ nmap } /{<CR>
 map! <C-F> <Esc>gUiw`]a
 
 " X 粘贴 ( Ctrl + P )
-nmap <C-P> "*P
+"nmap <C-P> "*P
 
 " 帮助 ( Ctrl + 2 )
 nmap <C-@> <ESC>:vert bo help<Space>
@@ -102,6 +102,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|mp3|gz|jpg|png|zip|swp|bmp|gif|rar|cue|flac)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+let g:ctrlp_user_command = 'find %s -type f'
 
 " tComment
 " nnoremap // :TComment<CR>
