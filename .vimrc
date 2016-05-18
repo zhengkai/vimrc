@@ -7,6 +7,11 @@ syntax on
 let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 
+let g:ctrlp_prompt_mappings = {
+	\ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
+	\ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
+	\ }
+
 " 记住上一次的位置
 au BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
