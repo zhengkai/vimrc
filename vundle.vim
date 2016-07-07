@@ -27,5 +27,6 @@ Bundle 'fatih/vim-go'
 Bundle 'rkitover/vimpager'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'easymotion/vim-easymotion'
+Bundle 'EvanDotPro/vim-php-syntax-check'
 
 filetype plugin indent on
