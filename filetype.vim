@@ -22,3 +22,5 @@ au BufRead,BufNewFile *.less set filetype=less
 
 " hosts
 au BufRead,BufNewFile hosts set filetype=hosts
+
+au BufRead,BufNewFile *.cue set filetype=cue
