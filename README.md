@@ -4,4 +4,4 @@
 	cd ~/.vim
     git submodule init
     git submodule update
-	vim +BundleInstall
+	vim +BundleInstall +qall

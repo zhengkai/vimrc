@@ -29,4 +29,6 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'easymotion/vim-easymotion'
 Bundle 'EvanDotPro/vim-php-syntax-check'
 
+Bundle 'jparise/vim-graphql'
+
 filetype plugin indent on
