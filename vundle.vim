@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'JavaScript-syntax'
 Bundle 'jQuery'
 Bundle 'ervandew/supertab'
 Bundle 'flazz/vim-colorschemes'
@@ -27,6 +26,9 @@ Bundle 'rkitover/vimpager'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'easymotion/vim-easymotion'
 Bundle 'EvanDotPro/vim-php-syntax-check'
+
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 Bundle 'jparise/vim-graphql'
 

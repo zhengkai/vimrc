@@ -6,6 +6,8 @@ so ~/.vim/vundle.vim
 syntax on
 let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
+let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 let g:ctrlp_prompt_mappings = {
 	\ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
