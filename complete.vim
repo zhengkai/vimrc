@@ -27,4 +27,3 @@ let g:SuperTabMappingTabLiteral = "<C-Tab>"
 
 " Eclim 回车查看变量
 let g:EclimDefaultFileOpenAction = 'vsplit'
-nnoremap <silent> <buffer> <cr> :PhpSearchContext<cr>
