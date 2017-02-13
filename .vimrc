@@ -130,3 +130,4 @@ let g:tango_dir += ['/www/']
 let g:neocomplcache_enable_at_startup = 1
 
 so ~/.vim/hotkey.vim
+so ~/.vim/autocmd.vim
