@@ -121,6 +121,9 @@ let g:yankring_replace_n_pkey = '<C-j>'
 let g:yankring_replace_n_nkey = '<C-k>'
 let g:yankring_history_dir = '~/.tmp'
 
+" go
+let g:go_fmt_command = "goimports"
+
 " Tango
 
 so ~/.vim/tango.vim
