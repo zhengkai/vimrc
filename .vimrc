@@ -26,10 +26,6 @@ inoremap <F4> <C-R>=strftime("%F %T")<CR>
 nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
 inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 
-" 识别 Alt 键
-"so ~/.vim/escalt.vim
-"nmap <M-w> <Esc>:silent! set invwrap<CR>
-
 " set timeout ttimeoutlen=50
 
 let Tlist_Use_Right_Window = 1
@@ -81,26 +77,9 @@ command Q q
 nmap <F1> <nop>
 nnoremap <silent> <F3> :TagbarToggle<CR>
 nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
-nmap <M-c> <ESC>:wq!<Enter>
-
-" 切换窗口
-nmap q <C-W>w
-
-" 退出所有窗口
-nmap Q :qa<CR>
-
-" 找括号
-nmap { ?{<CR>
-nmap } /{<CR>
-
-" 使之前的单词字母大写
-map! <C-F> <Esc>gUiw`]a
 
 " X 粘贴 ( Ctrl + P )
 "nmap <C-P> "*P
-
-" 帮助 ( Ctrl + 2 )
-nmap <C-@> <ESC>:vert bo help<Space>
 
 " CtrlP
 let g:ctrlp_cmd = 'CtrlP'
@@ -112,8 +91,8 @@ let g:ctrlp_custom_ignore = {
 "let g:ctrlp_user_command = 'find %s -type f'
 
 " tComment
-" nnoremap // :TComment<CR>
-" vnoremap // :TComment<CR>
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
 
 " YankRing
 
@@ -134,3 +113,16 @@ let g:neocomplcache_enable_at_startup = 1
 
 so ~/.vim/hotkey.vim
 so ~/.vim/autocmd.vim
+
+" virtual search
+vnoremap <silent> * :<C-U>
+    \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+    \gvy/<C-R><C-R>=substitute(
+    \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+    \gV:call setreg('"', old_reg, old_regtype)<CR>
+
+vnoremap <silent> # :<C-U>
+    \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+    \gvy?<C-R><C-R>=substitute(
+    \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+    \gV:call setreg('"', old_reg, old_regtype)<CR>
