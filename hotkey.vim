@@ -1,6 +1,5 @@
 " 执行当前文件
-nmap <C-S-O> :!clear && %:p<CR>
-nmap <S-K> <nop>
+nmap <S-U> :!clear && %:p<CR>
 
 " 切换窗口
 nmap q <C-W>w
@@ -23,4 +22,3 @@ let mapleader = "\<Space>"
 "nnoremap <nowait> <Leader>w :execute 'silent w !sudo tee % > /dev/null' | :e!
 nnoremap <nowait> <Leader>d y$
 nnoremap <nowait> <Leader>b :Gblame<CR>
-nnoremap <nowait> <Leader>r :!clear && %:p<CR>
