@@ -17,8 +17,5 @@ nmap <C-@> <ESC>:vert bo help<Space>
 " 使之前的单词字母大写
 map! <C-F> <Esc>gUiw`]a
 
-let mapleader = "\<Space>"
-
-"nnoremap <nowait> <Leader>w :execute 'silent w !sudo tee % > /dev/null' | :e!
-nnoremap <nowait> <Leader>d y$
-nnoremap <nowait> <Leader>b :Gblame<CR>
+" git blame
+nmap <S-B> :Gblame<CR>
