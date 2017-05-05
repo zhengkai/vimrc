@@ -29,15 +29,15 @@ function! TangoSwtich()
 		endif
 
 		let iLen = strlen(sBaseDir)
-		for sSubDir in ["www", "tpl"]
+		for sSubDir in ["/www/", "/tpl/"]
 
 			let sBody = strpart(sFile, iLen)
 			if stridx(sBody, sSubDir) != -1
 
-				if sSubDir == "www"
-					let sReplace = "tpl"
+				if sSubDir == "/www/"
+					let sReplace = "/tpl/"
 				else
-					let sReplace = "www"
+					let sReplace = "/www/"
 				endif
 
 				let sBody = substitute(sBody, sSubDir, sReplace, "")
@@ -45,7 +45,7 @@ function! TangoSwtich()
 
 				let sSwitchDir = fnamemodify(sSwitchFile, ":h")
 				if isdirectory(sSwitchDir)
-					let newWindow = (sSubDir == "www") ? "bo" : "to"
+					let newWindow = (sSubDir == "/www/") ? "bo" : "to"
 				else
 					echo "Tango Error: can not switch dir ".sSwitchDir
 					return

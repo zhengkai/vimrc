@@ -75,8 +75,22 @@ command W w
 command WQ wq
 command Q q
 nmap <F1> <nop>
-nnoremap <silent> <F3> :TagbarToggle<CR>
+
 nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
+
+" TagBar
+nnoremap <silent> <F3> :TagbarToggle<CR>
+let g:tagbar_type_php  = {
+	\ 'ctagstype' : 'php',
+	\ 'kinds'     : [
+		\ 'i:interfaces',
+		\ 'c:classes',
+		\ 'd:constant definitions',
+		\ 'f:functions',
+		\ 'j:javascript functions:1'
+	\ ]
+	\ }
+let g:tagbar_map_close = '<S-W>'
 
 " X 粘贴 ( Ctrl + P )
 "nmap <C-P> "*P
