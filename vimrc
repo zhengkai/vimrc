@@ -78,6 +78,10 @@ nmap <F1> <nop>
 
 nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
 
+" 通过文件传 yank
+nmap <C-Y> :call writefile(split(@@, "\n", 1), $HOME . '/.tmp/vimclip')<CR>
+nmap <C-I> :r $HOME/.tmp/vimclip<CR>
+
 " TagBar
 nnoremap <silent> <F3> :TagbarToggle<CR>
 let g:tagbar_type_php  = {
