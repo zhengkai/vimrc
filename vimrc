@@ -113,10 +113,23 @@ nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
 
 " YankRing
-
 let g:yankring_replace_n_pkey = '<C-j>'
 let g:yankring_replace_n_nkey = '<C-k>'
 let g:yankring_history_dir = '~/.tmp'
+
+" ESLint
+" let g:syntastic_javascript_checkers=['eslint']
+" let g:syntastic_php_checkers=['']
+" let g:syntastic_go_checkers=['']
+"
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " go
 let g:go_fmt_command = "goimports"

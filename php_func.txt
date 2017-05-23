@@ -11,6 +11,7 @@ $HTTP_RAW_POST_DATA
 $http_response_header
 $php_errormsg
 Exception
+Throwable
 __call
 __callStatic
 __CLASS__

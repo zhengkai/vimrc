@@ -17,10 +17,9 @@ Bundle 'fugitive.vim'
 Bundle 'groenewege/vim-less'
 " Bundle 'Shougo/neocomplcache.vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'KabbAmine/zeavim.vim'
-if has("python")
-	Bundle 'ashisha/image.vim'
-endif
+" Bundle 'vim-syntastic/syntastic'
+" Bundle 'KabbAmine/zeavim.vim'
+" Bundle 'ashisha/image.vim'
 Bundle 'fatih/vim-go'
 Bundle 'rkitover/vimpager'
 Bundle 'editorconfig/editorconfig-vim'
