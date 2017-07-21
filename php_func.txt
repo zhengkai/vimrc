@@ -2925,6 +2925,7 @@ tempnam
 textdomain
 THOUSEP
 throw
+throwable
 time
 time_nanosleep
 time_sleep_until

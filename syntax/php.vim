@@ -530,7 +530,7 @@ highlight link phpSpecialFunction phpOperator
 " - built-in classes harvested from get_declared_classes() in 5.1.4
 syntax keyword phpClasses containedin=ALLBUT,phpComment,phpStringDouble,phpStringSingle,phpIdentifier,phpMethodsVar
   \ stdClass __PHP_Incomplete_Class php_user_filter Directory ArrayObject
-  \ Exception ErrorException LogicException BadFunctionCallException BadMethodCallException DomainException
+  \ Exception Throwable ErrorException LogicException BadFunctionCallException BadMethodCallException DomainException
   \ RecursiveIteratorIterator IteratorIterator FilterIterator RecursiveFilterIterator ParentIterator LimitIterator
   \ CachingIterator RecursiveCachingIterator NoRewindIterator AppendIterator InfiniteIterator EmptyIterator
   \ ArrayIterator RecursiveArrayIterator DirectoryIterator RecursiveDirectoryIterator

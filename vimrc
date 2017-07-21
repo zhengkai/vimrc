@@ -131,6 +131,12 @@ let g:yankring_history_dir = '~/.tmp'
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
 
+" ag.vim
+
+let g:ag_prg="/usr/bin/ag --vimgrep"
+let g:ag_working_path_mode="r"
+nmap <C-G> <ESC>:Ag<Space>
+
 " go
 let g:go_fmt_command = "goimports"
 
