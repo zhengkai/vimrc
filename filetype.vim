@@ -24,3 +24,5 @@ au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile hosts set filetype=hosts
 
 au BufRead,BufNewFile *.cue set filetype=cue
+
+au BufRead,BufNewFile .babelrc set filetype=json
