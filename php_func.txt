@@ -1605,6 +1605,8 @@ MON_8
 MON_9
 money_format
 move_uploaded_file
+msgpack_pack
+msgpack_unpack
 MSG_DONTROUTE
 MSG_DONTWAIT
 MSG_EOF
@@ -2288,6 +2290,8 @@ quotemeta
 rad2deg
 RADIXCHAR
 rand
+random_bytes
+random_int
 range
 rawurldecode
 rawurlencode
