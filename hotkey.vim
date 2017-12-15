@@ -7,6 +7,9 @@ nmap q <C-W>w
 " 退出所有窗口
 nmap Q :qa<CR>
 
+" 关闭缺省 man
+nmap <S-K> <Nop>
+
 " 找括号
 nmap { ?{<CR>
 nmap } /{<CR>
