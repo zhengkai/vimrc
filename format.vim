@@ -12,7 +12,27 @@ function RemoveTrailingWhitespace()
 	endif
 endfunction
 
+function JavaScriptSyntax()
+	let cmd = '/usr/bin/node ' . shellescape(expand('%:p'))
+	let msg = systemlist(cmd)
+
+	if len(msg) && msg[4] =~ 'SyntaxError'
+
+		let ln = matchstr(msg[0], '[0-9]\+\>')
+		if strlen(ln)
+			exe ':' . ln
+		endif
+
+		echo ' '
+		echo msg[0]
+		echo ' '
+		echo msg[4]
+		echo ' '
+	endif
+endfunction
+
 " UNIX 换行
-au FileType php,sh,javascript,css,less,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
-au FileType php,sh,javascript,css,less,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
+au FileType php,sh,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
+au FileType php,sh,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
 au FileType go au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace() | silent! Fmt
+au FileType javascript au BufWritePost * :call JavaScriptSyntax()
