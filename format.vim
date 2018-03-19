@@ -13,7 +13,9 @@ function RemoveTrailingWhitespace()
 endfunction
 
 function JavaScriptSyntax()
-	let cmd = '/usr/bin/node ' . shellescape(expand('%:p'))
+
+	let bin = get(g:, 'node_bin', '/usr/bin/env node')
+	let cmd = bin . ' ' . shellescape(expand('%:p'))
 	let msg = systemlist(cmd)
 
 	if len(msg) && msg[4] =~ 'SyntaxError'

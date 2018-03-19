@@ -9,6 +9,8 @@ let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
+let g:node_bin = '/home/zhengkai/.nvm/versions/node/v4.6.2/bin/node'
+
 let g:ctrlp_prompt_mappings = {
 	\ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
 	\ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
