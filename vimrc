@@ -1,7 +1,11 @@
 set nocompatible
 set backspace=indent,eol,start
 
-so ~/.vim/vundle.vim
+so ~/.vim/plug.vim
+
+set termguicolors
+set t_8b=[48;2;%lu;%lu;%lum
+set t_8f=[38;2;%lu;%lu;%lum
 
 syntax on
 let g:EasyMotion_leader_key = '['
@@ -61,16 +65,6 @@ so ~/.vim/tabline.vim
 au BufNewFile *.php silent! 0r ~/.vim/tpl/php|call cursor(2,0)
 au BufNewFile *.html silent! 0r ~/.vim/tpl/html|call cursor(8,0)
 au BufNewFile *.sh silent! 0r ~/.vim/tpl/sh|call cursor(2,0)
-
-" 缩进
-set si
-set sw=4
-set noet
-
-" 无限恢复
-set undofile
-set undodir=~/.tmp
-set directory=~/.tmp//
 
 " 防止误操作
 command W w

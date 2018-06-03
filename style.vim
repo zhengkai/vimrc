@@ -25,89 +25,99 @@ set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 
 hi clear
 
-silent! colorscheme desert256
-" colorscheme graywh
+let g:jellybeans_overrides = {
+\    'Comment': { 'guifg': '999999' },
+\    'background': { 'guibg': '000000' },
+\}
 
-hi Search cterm=NONE ctermfg=015 ctermbg=006
+silent! colorscheme jellybeans
 
-hi normal ctermfg=255
-
-hi TabLine cterm=none ctermfg=16 ctermbg=24
-hi TabLineSel cterm=none ctermfg=16 ctermbg=39
-hi TabLineFill cterm=none ctermbg=24
-
-hi def link phpVarSelector Identifier
-
-hi phpStringSingle ctermfg=215
-hi phpStringDouble ctermfg=215
-hi phpQuote ctermfg=215 cterm=bold
-
-hi Normal ctermbg=16
-hi NonText ctermbg=233
-hi LineNr   ctermbg=233 ctermfg=246
+let g:lightline = {
+\ 'colorscheme': 'jellybeans',
+\ }
 
 hi ColorColumn ctermbg=233 guibg=#121212
 let &colorcolumn="81,".join(range(120,999),",")
 
-" 118
+" silent! colorscheme desert256
+" silent! colorscheme graywh
 
-hi phpComment ctermfg=141 ctermbg=16
-hi phpFunctions ctermfg=45
-hi phpClassesTag cterm=bold ctermfg=219
-hi phpFunctionsTag cterm=bold ctermfg=75
-hi phpSpecial ctermfg=123
-hi Statement ctermfg=228 cterm=none
-hi phpSpecialFunction ctermfg=45
-hi Type ctermfg=228 cterm=none
-hi phpClassesTag cterm=none
-
-hi Pmenu    ctermbg=127 ctermfg=16
-hi PmenuSel ctermbg=201 ctermfg=16 cterm=none
-
+"hi Search cterm=NONE ctermfg=015 ctermbg=006
+"
+"hi TabLine cterm=none ctermfg=16 ctermbg=24
+"hi TabLineSel cterm=none ctermfg=16 ctermbg=39
+"hi TabLineFill cterm=none ctermbg=24
+"
+"hi def link phpVarSelector Identifier
+"
+"hi phpStringSingle ctermfg=215
+"hi phpStringDouble ctermfg=215
+"hi phpQuote ctermfg=215 cterm=bold
+"
+"hi Normal ctermbg=16 guibg=black
+"hi NonText ctermbg=233
+"hi LineNr   ctermbg=233 ctermfg=246
+"
+"
+"" 118
+"
+"hi phpComment ctermfg=141 ctermbg=16
+"hi phpFunctions ctermfg=45
+"hi phpClassesTag cterm=bold ctermfg=219
+"hi phpFunctionsTag cterm=bold ctermfg=75
+"hi phpSpecial ctermfg=123
+"hi Statement ctermfg=228 cterm=none
+"hi phpSpecialFunction ctermfg=45
+"hi Type ctermfg=228 cterm=none
+"hi phpClassesTag cterm=none
+"
+"hi Pmenu    ctermbg=127 ctermfg=16
+"hi PmenuSel ctermbg=201 ctermfg=16 cterm=none
+"
 set cursorline
 hi CursorLine cterm=none ctermbg=235
 hi CursorLineNr cterm=none ctermbg=235 ctermfg=255
-
-hi SpecialKey cterm=none ctermfg=240 ctermbg=16
-
-hi SignColumn ctermbg=235
-
-hi phpFunctionsTag cterm=none
-
-"diff
-
-hi DiffAdd ctermbg=24
-hi DiffDelete ctermbg=233 ctermfg=233
-hi DiffChange ctermbg=22
-hi DiffText ctermbg=156 ctermfg=16
-
-hi def link diffSubname Normal
-hi diffFile cterm=bold ctermfg=222
-hi diffLine ctermfg=39
-hi DiffAdded ctermfg=118
-hi DiffRemoved ctermfg=208
-
-au InsertEnter * hi StatusLine ctermbg=208
-au InsertLeave * hi StatusLine ctermbg=39
-
+"
+"hi SpecialKey cterm=none ctermfg=240 ctermbg=16
+"
+"hi SignColumn ctermbg=235
+"
+"hi phpFunctionsTag cterm=none
+"
+""diff
+"
+"hi DiffAdd ctermbg=24
+"hi DiffDelete ctermbg=233 ctermfg=233
+"hi DiffChange ctermbg=22
+"hi DiffText ctermbg=156 ctermfg=16
+"
+"hi def link diffSubname Normal
+"hi diffFile cterm=bold ctermfg=222
+"hi diffLine ctermfg=39
+"hi DiffAdded ctermfg=118
+"hi DiffRemoved ctermfg=208
+"
+"au InsertEnter * hi StatusLine ctermbg=208
+"au InsertLeave * hi StatusLine ctermbg=39
+"
 set laststatus=2
 set numberwidth=6
 set sidescrolloff=10
-
-hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
-hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
-hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
-
-hi MarkWord1 ctermbg=61  ctermfg=253
-hi MarkWord2 ctermbg=132 ctermfg=253
-hi MarkWord3 ctermbg=204 ctermfg=253
-hi MarkWord4 ctermbg=31  ctermfg=253
-hi MarkWord5 ctermbg=102 ctermfg=253
-hi MarkWord6 ctermbg=175 ctermfg=253
-
-" QuickFix
-hi qfFileName cterm=none ctermfg=228
-hi qfLineNr cterm=none ctermfg=120
+"
+"hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
+"hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
+"hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
+"
+"hi MarkWord1 ctermbg=61  ctermfg=253
+"hi MarkWord2 ctermbg=132 ctermfg=253
+"hi MarkWord3 ctermbg=204 ctermfg=253
+"hi MarkWord4 ctermbg=31  ctermfg=253
+"hi MarkWord5 ctermbg=102 ctermfg=253
+"hi MarkWord6 ctermbg=175 ctermfg=253
+"
+"" QuickFix
+"hi qfFileName cterm=none ctermfg=228
+"hi qfLineNr cterm=none ctermfg=120
 
 "cnoremap ttab call ToggleIndentGuides()
 function! ToggleIndentGuides()
