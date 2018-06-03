@@ -12,12 +12,13 @@ Plug 'jparise/vim-graphql'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
 
-Plug 'gmarik/vundle'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'vim-scripts/jQuery'
 Plug 'ervandew/supertab'
 Plug 'flazz/vim-colorschemes'
 Plug 'kana/vim-fakeclip'
-Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'groenewege/vim-less'

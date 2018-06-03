@@ -17,6 +17,12 @@ nmap } /{<CR>
 " 帮助 ( Ctrl + 2 )
 nmap <C-@> <ESC>:vert bo help<Space>
 
+function! s:find_git_root()
+  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
+command! ProjectFiles execute 'Files' s:find_git_root()
+nmap <C-P> <ESC>:ProjectFiles<CR>
+
 " 使之前的单词字母大写
 map! <C-F> <Esc>gUiw`]a
 
