@@ -33,7 +33,7 @@ let g:jellybeans_overrides = {
 silent! colorscheme jellybeans
 
 let g:lightline = {
-\ 'colorscheme': 'jellybeans',
+\ 'colorscheme': 'wombat',
 \ }
 
 hi ColorColumn ctermbg=233 guibg=#121212
@@ -75,8 +75,9 @@ let &colorcolumn="81,".join(range(120,999),",")
 "hi PmenuSel ctermbg=201 ctermfg=16 cterm=none
 "
 set cursorline
-hi CursorLine cterm=none ctermbg=235
-hi CursorLineNr cterm=none ctermbg=235 ctermfg=255
+hi Cursor guifg=white guibg=black
+hi CursorLine cterm=none ctermbg=235 guibg=#303030
+hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "
 "hi SpecialKey cterm=none ctermfg=240 ctermbg=16
 "

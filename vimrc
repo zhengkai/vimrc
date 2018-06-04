@@ -15,11 +15,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 let g:node_bin = '/home/zhengkai/.nvm/versions/node/v4.6.2/bin/node'
 
-let g:ctrlp_prompt_mappings = {
-	\ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
-	\ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
-	\ }
-
 " 记住上一次的位置
 au BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
