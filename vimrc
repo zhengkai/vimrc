@@ -42,6 +42,17 @@ set nowrap
 set autowrite
 set nofoldenable
 
+" 缩进
+set si
+set sw=4
+set noet
+
+" 无限恢复
+set undofile
+set undodir=~/.tmp/vim-undo
+set undolevels=1000
+set undoreload=10000
+
 " 自动完成
 so ~/.vim/complete.vim
 
