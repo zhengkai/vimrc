@@ -1,4 +1,6 @@
-call plug#begin('~/.vim/plugged')
+" https://github.com/junegunn/vim-plug
+
+call plug#begin('~/.vim/.plugged')
 
 Plug 'nanotech/jellybeans.vim'
 

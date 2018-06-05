@@ -1,5 +1,2 @@
-/bundle/
 /.netrwhist
-/eclim/
-/plugin/eclim.vim
-/plugged/
+/.plugged/
