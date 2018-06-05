@@ -30,11 +30,12 @@ let g:jellybeans_overrides = {
 \    'background': { 'guibg': '000000' },
 \}
 
-silent! colorscheme jellybeans
+" silent! colorscheme jellybeans
+so jellybeans.vim
 
-let g:lightline = {
-\ 'colorscheme': 'wombat',
-\ }
+"let g:lightline = {
+"\ 'colorscheme': 'wombat',
+"\ }
 
 hi ColorColumn ctermbg=233 guibg=#121212
 let &colorcolumn="81,".join(range(120,999),",")
@@ -44,9 +45,9 @@ let &colorcolumn="81,".join(range(120,999),",")
 
 "hi Search cterm=NONE ctermfg=015 ctermbg=006
 "
-"hi TabLine cterm=none ctermfg=16 ctermbg=24
-"hi TabLineSel cterm=none ctermfg=16 ctermbg=39
-"hi TabLineFill cterm=none ctermbg=24
+hi TabLine cterm=none ctermfg=16 ctermbg=24 guibg=#005f87
+hi TabLineSel cterm=none ctermfg=16 ctermbg=39 guibg=#00afff
+hi TabLineFill cterm=none ctermbg=24 guibg=#005f87
 "
 "hi def link phpVarSelector Identifier
 "
@@ -98,16 +99,16 @@ hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "hi DiffAdded ctermfg=118
 "hi DiffRemoved ctermfg=208
 "
-"au InsertEnter * hi StatusLine ctermbg=208
-"au InsertLeave * hi StatusLine ctermbg=39
+au InsertEnter * hi StatusLine ctermbg=208
+au InsertLeave * hi StatusLine ctermbg=39
 "
 set laststatus=2
 set numberwidth=6
 set sidescrolloff=10
 "
-"hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
-"hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
-"hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
+hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
+hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
+hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "
 "hi MarkWord1 ctermbg=61  ctermfg=253
 "hi MarkWord2 ctermbg=132 ctermfg=253

@@ -2,10 +2,10 @@
 
 call plug#begin('~/.vim/.plugged')
 
-Plug 'nanotech/jellybeans.vim'
-
+" Plug 'nanotech/jellybeans.vim'
+" Plug 'itchyny/lightline.vim'
+"
 Plug 'junegunn/vim-easy-align'
-Plug 'itchyny/lightline.vim'
 Plug 'cocopon/svss.vim'
 
 Plug 'w0rp/ale'
