@@ -98,17 +98,11 @@ hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "hi diffLine ctermfg=39
 "hi DiffAdded ctermfg=118
 "hi DiffRemoved ctermfg=208
-"
-au InsertEnter * hi StatusLine ctermbg=214
 
-au InsertLeave * hi StatusLine ctermbg=39
-"
 set laststatus=2
 set numberwidth=6
 set sidescrolloff=10
 "
-hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
-hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
 hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "
 "hi MarkWord1 ctermbg=61  ctermfg=253
@@ -123,6 +117,9 @@ hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "hi qfLineNr cterm=none ctermfg=120
 
 "cnoremap ttab call ToggleIndentGuides()
+
+map <F7> :call ToggleIndentGuide()<CR>
+
 function! ToggleIndentGuides()
 	if exists('b:indent_guides')
 		set list listchars=tab:\ \ ,
