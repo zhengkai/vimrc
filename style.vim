@@ -31,7 +31,7 @@ let g:jellybeans_overrides = {
 \}
 
 " silent! colorscheme jellybeans
-so jellybeans.vim
+so ~/.vim/jellybeans.vim
 
 "let g:lightline = {
 "\ 'colorscheme': 'wombat',
