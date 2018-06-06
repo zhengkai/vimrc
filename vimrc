@@ -8,6 +8,9 @@ set t_8b=[48;2;%lu;%lu;%lum
 set t_8f=[38;2;%lu;%lu;%lum
 
 syntax on
+
+let g:XtermColorTableDefaultOpen = 'vsplit'
+
 let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 let g:jsx_ext_required = 0

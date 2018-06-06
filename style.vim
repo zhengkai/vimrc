@@ -99,7 +99,8 @@ hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "hi DiffAdded ctermfg=118
 "hi DiffRemoved ctermfg=208
 "
-au InsertEnter * hi StatusLine ctermbg=208
+au InsertEnter * hi StatusLine ctermbg=214
+
 au InsertLeave * hi StatusLine ctermbg=39
 "
 set laststatus=2
