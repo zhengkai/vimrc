@@ -1,3 +1,4 @@
+set fillchars+=vert:│
 
 set ruler
 set showcmd
@@ -27,31 +28,51 @@ so ~/.vim/jellybeans.vim
 
 let g:lightline = {}
 
+hi VertSplit ctermbg=NONE guibg=NONE
+
 let g:lightline.colorscheme = 'zhengkai'
 let g:lightline.tabline = {
 \   'left': [['absolutepath']],
 \   'right': [],
 \ }
 
+" let g:lightline.separator    = { 'left': '', 'right': '' }
+let g:lightline.subseparator = { 'left': '│', 'right': '│' }
+
 let g:lightline.active = {
 \ 'left': [
 \   [ 'mode', 'paste' ],
-\   [ 'filename', ],
 \   [ 'readonly', 'modified' ],
 \   [ 'filetype' ],
+\   [ 'filesize' ],
+\   [ 'gitbranch' ],
 \ ],
 \ 'right': [
 \   [ 'lineinfo' ],
 \   [ 'percent' ],
-\   [ 'fileformat' ],
-\   [ ' ' ],
-\   [ 'fileencoding' ],
+\   [ 'fileformat', 'fileencoding' ],
 \ ],
 \ }
 
+let g:lightline.component = {
+\   'fileformat': ' %{&ff}',
+\   'fileencoding': '%{&fenc!=#""?&fenc:&enc} ',
+\ }
+
+function! FileSize()
+	let bytes = getfsize(expand("%:p"))
+	let bytes = substitute(bytes, '\d\zs\ze\%(\d\d\d\)\+$', ',', 'g')
+	return bytes
+endfunction
+
+let g:lightline.component_function = {
+\   'filesize': 'FileSize',
+\   'gitbranch': 'fugitive#head',
+\ }
+
 let g:lightline.inactive = {
-\ 'left': [ [ 'filename' ], [ 'readonly', 'modified' ] ],
-\ 'right': [],
+\   'left': [ [ 'readonly', 'modified' ], [ 'filename' ], [ 'gitbranch' ] ],
+\   'right': [],
 \ }
 
 let g:jellybeans_overrides = {
@@ -127,8 +148,9 @@ hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "hi DiffAdded ctermfg=118
 "hi DiffRemoved ctermfg=208
 "
-au InsertEnter * hi StatusLine ctermbg=208
-au InsertLeave * hi StatusLine ctermbg=39
+" au InsertEnter * hi StatusLine ctermbg=208
+" au InsertLeave * hi StatusLine ctermbg=39
+" hi StatusLine guibg=#303030 ctermbg=236
 "
 set laststatus=2
 set numberwidth=6
@@ -163,6 +185,7 @@ endfunction
 nmap <F6> :call <SID>SynStack()<CR>
 
 function! <SID>SynStack()
+
 	if !exists("*synstack")
 		return
 	endif

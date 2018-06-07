@@ -63,13 +63,14 @@ so ~/.vim/complete.vim
 so ~/.vim/style.vim
 
 " 状态栏
-so ~/.vim/status.vim
-so ~/.vim/statusbar.vim
+" so ~/.vim/status.vim
+" so ~/.vim/statusbar.vim
 
-so ~/.vim/json_2_phparray.vim
+" so ~/.vim/json_2_phparray.vim
 so ~/.vim/format.vim
 so ~/.vim/pair_complete.vim
-so ~/.vim/tabline.vim
+set showtabline=2
+" so ~/.vim/tabline.vim
 
 " 新建 PHP 文件模版
 au BufNewFile *.php silent! 0r ~/.vim/tpl/php|call cursor(2,0)
