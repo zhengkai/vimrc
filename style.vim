@@ -23,15 +23,43 @@ set termencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 " set ambiwidth=double
 
-hi clear
+so ~/.vim/jellybeans.vim
+
+let g:lightline = {}
+
+let g:lightline.colorscheme = 'zhengkai'
+let g:lightline.tabline = {
+\   'left': [['absolutepath']],
+\   'right': [],
+\ }
+
+let g:lightline.active = {
+\ 'left': [
+\   [ 'mode', 'paste' ],
+\   [ 'filename', ],
+\   [ 'readonly', 'modified' ],
+\   [ 'filetype' ],
+\ ],
+\ 'right': [
+\   [ 'lineinfo' ],
+\   [ 'percent' ],
+\   [ 'fileformat' ],
+\   [ ' ' ],
+\   [ 'fileencoding' ],
+\ ],
+\ }
+
+let g:lightline.inactive = {
+\ 'left': [ [ 'filename' ], [ 'readonly', 'modified' ] ],
+\ 'right': [],
+\ }
 
 let g:jellybeans_overrides = {
-\    'Comment': { 'guifg': '999999' },
-\    'background': { 'guibg': '000000' },
-\}
+\   'Comment': { 'guifg': '999999' },
+\   'background': { 'guibg': '000000' },
+\ }
 
 " silent! colorscheme jellybeans
-so ~/.vim/jellybeans.vim
 
 "let g:lightline = {
 "\ 'colorscheme': 'wombat',
@@ -98,11 +126,16 @@ hi CursorLineNr cterm=none ctermbg=235 ctermfg=255 guibg=#303030
 "hi diffLine ctermfg=39
 "hi DiffAdded ctermfg=118
 "hi DiffRemoved ctermfg=208
-
+"
+au InsertEnter * hi StatusLine ctermbg=208
+au InsertLeave * hi StatusLine ctermbg=39
+"
 set laststatus=2
 set numberwidth=6
 set sidescrolloff=10
 "
+hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
+hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
 hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "
 "hi MarkWord1 ctermbg=61  ctermfg=253
@@ -117,9 +150,6 @@ hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "hi qfLineNr cterm=none ctermfg=120
 
 "cnoremap ttab call ToggleIndentGuides()
-
-map <F7> :call ToggleIndentGuide()<CR>
-
 function! ToggleIndentGuides()
 	if exists('b:indent_guides')
 		set list listchars=tab:\ \ ,

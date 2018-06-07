@@ -3,7 +3,7 @@
 call plug#begin('~/.vim/.plugged')
 
 " Plug 'nanotech/jellybeans.vim'
-" Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 
 Plug 'guns/xterm-color-table.vim'
 
