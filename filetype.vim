@@ -25,4 +25,4 @@ au BufRead,BufNewFile hosts set filetype=hosts
 
 au BufRead,BufNewFile *.cue set filetype=cue
 
-au BufRead,BufNewFile .babelrc set filetype=json
+au BufRead,BufNewFile .babelrc,.eslintrc set filetype=javascript
