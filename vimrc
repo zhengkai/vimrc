@@ -9,6 +9,12 @@ set t_8f=[38;2;%lu;%lu;%lum
 
 syntax on
 
+let g:keysound_enable = 1
+" 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
+let g:keysound_theme = 'typewriter'
+" let g:keysound_py_version = 3
+let g:keysound_volume = 500
+
 let g:XtermColorTableDefaultOpen = 'vsplit'
 
 let g:EasyMotion_leader_key = '['
