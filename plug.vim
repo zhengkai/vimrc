@@ -10,7 +10,7 @@ Plug 'guns/xterm-color-table.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'cocopon/svss.vim'
 
-Plug 'skywind3000/vim-keysound'
+" Plug 'skywind3000/vim-keysound'
 
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
