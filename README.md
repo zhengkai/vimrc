@@ -2,4 +2,4 @@
     mkdir -p ~/.tmp/vim-undo
     cd ~/.vim
     git submodule update --init --recursive
-    vim +BundleInstall +qall
+    vim +PlugInstall +qall
