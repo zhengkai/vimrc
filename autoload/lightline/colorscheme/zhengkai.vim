@@ -43,18 +43,21 @@ let s:magenta = [ '#f2c68a', 216 ]
 let s:blue = [ '#8ac6f2', 117 ]
 let s:cyan = s:blue
 let s:green = [ '#95e454', 119 ]
+let s:ro = [ '#eeeeee', 255 ]
+let s:red = [ '#af1111', 124 ]
+let s:redDark = [ '#5f1111', 88 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:p.normal.right = [ [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ], ]
 
 " let s:p.inactive.right = [ [ s:base04, s:base01 ], [ s:base00, s:base02 ] ]
-let s:p.inactive.left =  [ [ s:warn, s:w1 ], [ s:black, s:w2 ], [ s:black, s:w3 ]  ]
+let s:p.inactive.left =  [ [ s:w2, s:redDark ], [ s:warn, s:w1 ], [ s:black, s:w2 ], [ s:black, s:w3 ]  ]
 
-let s:p.normal.left  = [ [ s:base02, s:normal],   [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
-let s:p.insert.left  = [ [ s:base02, s:insert ],  [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
-let s:p.replace.left = [ [ s:base04, s:replace ], [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
-let s:p.visual.left  = [ [ s:base02, s:visual ],  [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
+let s:p.normal.left  = [ [ s:base02, s:normal],   [ s:ro, s:red ], [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
+let s:p.insert.left  = [ [ s:base02, s:insert ],  [ s:ro, s:red ], [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
+let s:p.replace.left = [ [ s:base04, s:replace ], [ s:ro, s:red ], [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
+let s:p.visual.left  = [ [ s:base02, s:visual ],  [ s:ro, s:red ], [ s:black, s:warn ], [ s:black, s:d1 ], [ s:black, s:d2 ], [ s:black, s:d3 ] ]
 let s:p.normal.middle = [ [ s:base3, s:dark ] ]
 let s:p.inactive.middle = [ [ s:base1, s:base04 ] ]
 

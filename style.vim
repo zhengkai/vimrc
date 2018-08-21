@@ -42,7 +42,8 @@ let g:lightline.subseparator = { 'left': '│', 'right': '│' }
 let g:lightline.active = {
 \ 'left': [
 \   [ 'mode', 'paste' ],
-\   [ 'readonly', 'modified' ],
+\   [ 'readonly' ],
+\   [ 'modified' ],
 \   [ 'filetype' ],
 \   [ 'filesize' ],
 \   [ 'gitbranch' ],
@@ -71,7 +72,7 @@ let g:lightline.component_function = {
 \ }
 
 let g:lightline.inactive = {
-\   'left': [ [ 'readonly', 'modified' ], [ 'filename' ], [ 'gitbranch' ] ],
+\   'left': [ [ 'readonly' ], [ 'modified' ], [ 'filename' ], [ 'gitbranch' ] ],
 \   'right': [],
 \ }
 
