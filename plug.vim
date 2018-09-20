@@ -28,6 +28,7 @@ Plug 'tpope/vim-fugitive'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'Quramy/tsuquyomi'
 Plug 'vim-scripts/jQuery'
 Plug 'ervandew/supertab'
 Plug 'kana/vim-fakeclip'
@@ -44,7 +45,6 @@ Plug 'fatih/vim-go'
 Plug 'rkitover/vimpager'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'EvanDotPro/vim-php-syntax-check'
 
 Plug 'mxw/vim-jsx'
 

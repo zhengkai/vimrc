@@ -17,6 +17,10 @@ let g:keysound_volume = 500
 
 let g:XtermColorTableDefaultOpen = 'vsplit'
 
+" https://stackoverflow.com/a/27206531/966103
+" alt + left
+map <Esc>[1;3D :echo yes
+
 let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 let g:jsx_ext_required = 0
