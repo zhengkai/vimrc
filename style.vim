@@ -24,6 +24,8 @@ set termencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 " set ambiwidth=double
 
+let g:jellybeans_background_color = '000000'
+let g:jellybeans_background_color_256 = '000000'
 so ~/.vim/jellybeans.vim
 
 let g:lightline = {}
