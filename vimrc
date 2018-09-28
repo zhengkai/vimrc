@@ -1,6 +1,9 @@
 set nocompatible
 set backspace=indent,eol,start
 
+" swap 文件保存地址
+set directory=$HOME/.tmp/vim-swap//
+
 so ~/.vim/plug.vim
 
 set termguicolors
