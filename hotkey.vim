@@ -8,7 +8,7 @@ nmap q <C-W>w
 nmap Q :qa<CR>
 
 " 关闭缺省 man
-nmap <S-K> <Nop>
+" nmap <S-K> <Nop>
 
 " 找括号
 nmap { ?{<CR>

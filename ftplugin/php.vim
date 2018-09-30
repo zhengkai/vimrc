@@ -25,4 +25,4 @@
 "
 " set errorformat=%m\ in\ %f\ on\ line\ %l
 
-nnoremap <silent> <buffer> <cr> :PhpSearchContext<cr>
+"nnoremap <silent> <buffer> <cr> :PhpSearchContext<cr>
