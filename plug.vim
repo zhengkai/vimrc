@@ -26,6 +26,7 @@ Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-fugitive'
 
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'Quramy/tsuquyomi'
@@ -41,7 +42,7 @@ Plug 'majutsushi/tagbar'
 " Plug 'KabbAmine/zeavim.vim'
 " Plug 'ashisha/image.vim'
 Plug 'rking/ag.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'StanAngeloff/php.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'rkitover/vimpager'

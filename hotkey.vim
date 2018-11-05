@@ -21,7 +21,8 @@ function! s:find_git_root()
   return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
 endfunction
 command! ProjectFiles execute 'Files' s:find_git_root()
-nmap <C-P> <ESC>:ProjectFiles<CR>
+nmap <C-P> <ESC>:GFiles<CR>
+nmap <Esc>p <ESC>:ProjectFiles<CR>
 
 " 使之前的单词字母大写
 map! <C-F> <Esc>gUiw`]a

@@ -12,6 +12,12 @@ set t_8f=[38;2;%lu;%lu;%lum
 
 syntax on
 
+let g:fzf_action = {
+	\ 'enter': 'vsplit',
+	\ 'ctrl-t': 'tabedit',
+	\ 'ctrl-x': 'split',
+	\ }
+
 let g:keysound_enable = 1
 " 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
 let g:keysound_theme = 'typewriter'
@@ -32,6 +38,14 @@ let g:jsx_ext_required = 0
 " let g:node_bin = '/home/zhengkai/.nvm/versions/node/v4.6.2/bin/node'
 
 let g:ale_completion_enabled = 1
+
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\ }
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\ }
 
 " 记住上一次的位置
 au BufReadPost *
