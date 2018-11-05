@@ -12,29 +12,31 @@ function RemoveTrailingWhitespace()
 	endif
 endfunction
 
-function JavaScriptSyntax()
-
-	let bin = get(g:, 'node_bin', '/usr/bin/env node')
-	let cmd = bin . ' ' . shellescape(expand('%:p'))
-	let msg = systemlist(cmd)
-
-	if len(msg) && msg[4] =~ 'SyntaxError'
-
-		let ln = matchstr(msg[0], '[0-9]\+\>')
-		if strlen(ln)
-			exe ':' . ln
-		endif
-
-		echo ' '
-		echo msg[0]
-		echo ' '
-		echo msg[4]
-		echo ' '
-	endif
-endfunction
+"function JavaScriptSyntax()
+"
+"	let bin = get(g:, 'node_bin', '/usr/bin/env node')
+"	let cmd = bin . ' ' . shellescape(expand('%:p'))
+"	let msg = systemlist(cmd)
+"
+"	if len(msg) && msg[4] =~ 'SyntaxError'
+"
+"		let ln = matchstr(msg[0], '[0-9]\+\>')
+"		if strlen(ln)
+"			exe ':' . ln
+"		endif
+"
+"		echo ' '
+"		echo msg[0]
+"		echo ' '
+"		echo msg[4]
+"		echo ' '
+"	endif
+"endfunction
 
 " UNIX 换行
 au FileType php,sh,fstab,zsh,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
 au FileType php,sh,fstab,zsh,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
 au FileType go au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace() | silent! Fmt
-au FileType javascript au BufWritePost * :call JavaScriptSyntax()
+" au FileType javascript au BufWritePost * :call JavaScriptSyntax()
+
+au BufWritePre ~/conf/filelist,~/conf/apt/list-aptget,~/conf/apt/list-desktop :sort

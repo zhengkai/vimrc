@@ -38,13 +38,15 @@ let g:jsx_ext_required = 0
 " let g:node_bin = '/home/zhengkai/.nvm/versions/node/v4.6.2/bin/node'
 
 let g:ale_completion_enabled = 1
+let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
 \ }
 
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['prettier'],
 \ }
 
 " 记住上一次的位置
