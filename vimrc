@@ -41,12 +41,12 @@ let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
+\   'javascript': ['eslint'],
 \   'css': ['prettier'],
 \ }
 
 let g:ale_linters = {
-\   'javascript': ['prettier'],
+\   'javascript': ['eslint'],
 \ }
 
 " 记住上一次的位置
