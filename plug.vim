@@ -21,7 +21,10 @@ Plug 'leafgarland/typescript-vim'
 Plug 'flowtype/vim-flow'
 Plug 'jparise/vim-graphql'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-markdown'
+
+Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-fugitive'
 
