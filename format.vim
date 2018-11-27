@@ -34,8 +34,8 @@ endfunction
 "endfunction
 
 " UNIX 换行
-au FileType php,sh,fstab,zsh,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
-au FileType php,sh,fstab,zsh,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
+au FileType php,sh,fstab,zsh,json,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace()
+au FileType php,sh,fstab,zsh,json,typescript,javascript,css,less,sass,scss,text,html,dosini,vim,gitconfig,conf,nginx,mkd silent! set fileformat=unix
 au FileType go au BufWritePre * :silent! undojoin | silent! call RemoveTrailingWhitespace() | silent! Fmt
 " au FileType javascript au BufWritePost * :call JavaScriptSyntax()
 

@@ -209,4 +209,3 @@ usort($lOut, function ($a, $b) {
 $sOut = implode("\n", $lOut);
 
 file_put_contents(__DIR__."/php_func.txt", $sOut);
-
