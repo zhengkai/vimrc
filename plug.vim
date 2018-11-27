@@ -13,15 +13,14 @@ Plug 'cocopon/svss.vim'
 " Plug 'skywind3000/vim-keysound'
 
 Plug 'w0rp/ale'
-Plug 'sheerun/vim-polyglot'
-Plug 'sirver/ultisnips'
-Plug 'tpope/vim-surround'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'sirver/ultisnips'
+" Plug "tpope/vim-surround"
 
 Plug 'leafgarland/typescript-vim'
 Plug 'flowtype/vim-flow'
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-markdown'
 
 Plug 'airblade/vim-gitgutter'
@@ -29,12 +28,15 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+Plug 'maralla/completor.vim'
+
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
+
 Plug 'Quramy/tsuquyomi'
-Plug 'vim-scripts/jQuery'
-Plug 'ervandew/supertab'
+" Plug 'vim-scripts/jQuery'
+" Plug 'ervandew/supertab'
 Plug 'kana/vim-fakeclip'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/YankRing.vim'
@@ -52,6 +54,6 @@ Plug 'rkitover/vimpager'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'easymotion/vim-easymotion'
 
-Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx'
 
 call plug#end()
