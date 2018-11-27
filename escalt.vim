@@ -1,3 +1,5 @@
+" 目前没有在用
+
 " escalt.vim    控制台下让用 <M-x> 也可用
 " Author:       lilydjwg <lilydjwg@gmail.com>
 " Last Change:  2010年12月15日

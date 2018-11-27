@@ -61,8 +61,6 @@ inoremap <F4> <C-R>=strftime("%F %T")<CR>
 nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
 inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 
-" set timeout ttimeoutlen=50
-
 let Tlist_Use_Right_Window = 1
 
 set novisualbell
@@ -201,3 +199,29 @@ vnoremap <silent> # :<C-U>
     \gvy?<C-R><C-R>=substitute(
     \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
     \gV:call setreg('"', old_reg, old_regtype)<CR>
+
+" via https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
+set sessionoptions-=options
+set autoindent
+set backspace=indent,eol,start
+set complete-=i
+set smarttab
+set scrolloff=1
+set sidescrolloff=5
+set wildmenu
+
+set nrformats-=octal
+set tabpagemax=50
+
+if !has('nvim') && &ttimeoutlen == -1
+	set ttimeout
+	set ttimeoutlen=100
+endif
+
+"没懂 http://vim.wikia.com/wiki/Recover_from_accidental_Ctrl-U
+inoremap <C-U> <C-G>u<C-U>
+
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
+	set t_Co=16
+endif
