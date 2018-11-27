@@ -28,6 +28,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'maralla/completor.vim'
@@ -35,6 +36,7 @@ Plug 'maralla/completor.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
 
 Plug 'Quramy/tsuquyomi'
+Plug 'jason0x43/vim-js-indent'
 " Plug 'vim-scripts/jQuery'
 " Plug 'ervandew/supertab'
 Plug 'kana/vim-fakeclip'
