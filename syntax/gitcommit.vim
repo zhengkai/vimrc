@@ -1,8 +1,9 @@
 " Vim syntax file
-" Language:	git commit file
-" Maintainer:	Tim Pope <vimNOSPAM@tpope.org>
-" Filenames:	*.git/COMMIT_EDITMSG
-" Last Change:	2016 Aug 29
+" Language:      git commit file
+" Maintainer:    Tim Pope <vimNOSPAM@tpope.org>
+" Filenames:     *.git/COMMIT_EDITMSG
+" Latest Author: Zheng Kai <zhengkai@gmail.com>
+" Last Change:   2018 Dec 4
 
 if exists("b:current_syntax")
   finish
@@ -62,12 +63,12 @@ syn match   gitcommitWarning		"\%^[^#].*: needs merge$" nextgroup=gitcommitWarni
 syn match   gitcommitWarning		"^[^#].*: needs merge$" nextgroup=gitcommitWarning skipnl contained
 syn match   gitcommitWarning		"^\%(no changes added to commit\|nothing \%(added \)\=to commit\)\>.*\%$"
 
-hi def link gitcommitNewFileType      Question
-hi def link gitcommitModifiedFileType Function
-hi def link gitcommitDeletedFileType  Constant
-hi def link gitcommitNewFile          gitcommitNewFileType
-hi def link gitcommitModifiedFile     gitcommitModifiedFileType
-hi def link gitcommitDeletedFile      gitcommitDeletedFileType
+hi def link gitcommitNewFileType      gitcommitNewFile
+hi def link gitcommitModifiedFileType gitcommitModifiedFile
+hi def link gitcommitDeletedFileType  gitcommitDeletedFile
+hi def link gitcommitNewFile          Question
+hi def link gitcommitModifiedFile     Function
+hi def link gitcommitDeletedFile      Constant
 
 hi def link gitcommitSummary		Keyword
 hi def link gitcommitComment		Comment
