@@ -6,7 +6,7 @@ set directory=$HOME/.tmp/vim-swap//
 
 so ~/.vim/plug.vim
 
-map ff <Plug>(easymotion-s)
+map ;; <Plug>(easymotion-s)
 
 set termguicolors
 set t_8b=[48;2;%lu;%lu;%lum
@@ -225,3 +225,6 @@ inoremap <C-U> <C-G>u<C-U>
 if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
 	set t_Co=16
 endif
+
+au FileType gitcommit
+ \ hi gitcommitSummary ctermfg=red ctermbg=red
