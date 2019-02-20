@@ -3,6 +3,8 @@ nmap <S-U> :!clear && %:p<CR>
 
 " 切换窗口
 nmap q <C-W>w
+" alt + q，反序切窗口
+map <Esc>q <C-W>W
 
 " 退出所有窗口
 nmap Q :qa<CR>
