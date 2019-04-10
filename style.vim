@@ -26,7 +26,11 @@ set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 
 let g:jellybeans_background_color = '000000'
 let g:jellybeans_background_color_256 = '000000'
-so ~/.vim/jellybeans.vim
+" so ~/.vim/jellybeans.vim
+
+colorscheme night-owl
+hi Normal guibg=#000000
+hi LineNr guifg=#605958 guibg=#000000
 
 let g:lightline = {}
 
