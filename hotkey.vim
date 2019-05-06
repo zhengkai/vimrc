@@ -1,3 +1,21 @@
+" https://stackoverflow.com/a/27206531/966103
+" alt + left
+map <Esc>[1;3D :echo yes
+
+nnoremap <silent> <Esc>3 :TagbarToggle<CR>
+
+" 防止误操作
+command W w
+command WQ wq
+command Q q
+nmap <F1> <nop>
+
+nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
+
+" 通过文件传 yank
+nmap <C-Y> :call writefile(split(@@, "\n", 1), $HOME . '/.tmp/vimclip')<CR>
+nmap <C-I> :r $HOME/.tmp/vimclip<CR>
+
 " 执行当前文件
 nmap <S-U> :!clear && %:p<CR>
 

@@ -28,10 +28,6 @@ let g:keysound_volume = 500
 
 let g:XtermColorTableDefaultOpen = 'vsplit'
 
-" https://stackoverflow.com/a/27206531/966103
-" alt + left
-map <Esc>[1;3D :echo yes
-
 let g:EasyMotion_leader_key = '['
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 let g:jsx_ext_required = 0
@@ -106,18 +102,6 @@ au BufNewFile *.php silent! 0r ~/.vim/tpl/php|call cursor(2,0)
 au BufNewFile *.html silent! 0r ~/.vim/tpl/html|call cursor(8,0)
 au BufNewFile *.sh silent! 0r ~/.vim/tpl/sh|call cursor(2,0)
 
-" 防止误操作
-command W w
-command WQ wq
-command Q q
-nmap <F1> <nop>
-
-nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
-
-" 通过文件传 yank
-nmap <C-Y> :call writefile(split(@@, "\n", 1), $HOME . '/.tmp/vimclip')<CR>
-nmap <C-I> :r $HOME/.tmp/vimclip<CR>
-
 " TagBar
 nnoremap <silent> <F3> :TagbarToggle<CR>
 let g:tagbar_type_php  = {
@@ -188,8 +172,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " Tango
 
-so ~/.vim/tango.vim
-let g:tango_dir += ['/www/']
+" so ~/.vim/tango.vim
+" let g:tango_dir += ['/www/']
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
