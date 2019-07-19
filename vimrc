@@ -93,7 +93,7 @@ so ~/.vim/style.vim
 
 " so ~/.vim/json_2_phparray.vim
 so ~/.vim/format.vim
-so ~/.vim/pair_complete.vim
+" so ~/.vim/pair_complete.vim
 set showtabline=2
 " so ~/.vim/tabline.vim
 

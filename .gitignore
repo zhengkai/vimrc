@@ -1,3 +1,4 @@
 /.netrwhist
 /.plugged/
 *.swp
+/autoload/plug.vim.old

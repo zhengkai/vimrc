@@ -17,7 +17,7 @@ Plug 'cocopon/svss.vim'
 Plug 'w0rp/ale'
 " Plug 'sheerun/vim-polyglot'
 " Plug 'sirver/ultisnips'
-" Plug "tpope/vim-surround"
+" Plug 'tpope/vim-surround'
 
 Plug 'leafgarland/typescript-vim'
 Plug 'flowtype/vim-flow'
@@ -32,6 +32,8 @@ Plug 'tpope/vim-fugitive'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'maralla/completor.vim'
 
