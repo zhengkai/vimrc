@@ -33,9 +33,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
-Plug 'jiangmiao/auto-pairs'
-
-Plug 'maralla/completor.vim'
+" Plug 'jiangmiao/auto-pairs'
+" Plug 'maralla/completor.vim'
 
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
 

@@ -51,12 +51,6 @@ au BufReadPost *
 	\ exe "normal g`\"" |
 	\ endif
 
-nnoremap <F4> "=strftime("%F %T")<CR>Pl
-inoremap <F4> <C-R>=strftime("%F %T")<CR>
-
-nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
-inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
-
 let Tlist_Use_Right_Window = 1
 
 set novisualbell
@@ -93,7 +87,7 @@ so ~/.vim/style.vim
 
 " so ~/.vim/json_2_phparray.vim
 so ~/.vim/format.vim
-" so ~/.vim/pair_complete.vim
+so ~/.vim/pair_complete.vim
 set showtabline=2
 " so ~/.vim/tabline.vim
 

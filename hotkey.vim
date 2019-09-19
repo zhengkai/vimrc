@@ -1,3 +1,9 @@
+nnoremap <Esc>t "=strftime("%F %T")<CR>Pl
+inoremap <Esc>t <C-R>=strftime("%F %T")<CR>
+
+nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
+inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
+
 " https://stackoverflow.com/a/27206531/966103
 " alt + left
 map <Esc>[1;3D :echo yes
