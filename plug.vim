@@ -7,58 +7,51 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'haishanh/night-owl.vim'
 
-Plug 'guns/xterm-color-table.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
 
-Plug 'junegunn/vim-easy-align'
-Plug 'cocopon/svss.vim'
+" " Plug 'KabbAmine/zeavim.vim'
+" " Plug 'Shougo/neocomplcache.vim'
+" " Plug 'ashisha/image.vim'
+" " Plug 'ervandew/supertab'
+" " Plug 'jason0x43/vim-js-indent'
+" " Plug 'jiangmiao/auto-pairs'
+" " Plug 'jparise/vim-graphql'
+" " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" " Plug 'maralla/completor.vim'
+" " Plug 'mxw/vim-jsx'
+" " Plug 'sheerun/vim-polyglot'
+" " Plug 'sirver/ultisnips'
+" " Plug 'skywind3000/vim-keysound'
+" " Plug 'tpope/vim-surround'
+" " Plug 'vim-scripts/jQuery'
+" " Plug 'vim-syntastic/syntastic'
+" " Plug 'shawncplus/phpcomplete.vim'
+" " Plug 'junegunn/vim-easy-align'
 
-" Plug 'skywind3000/vim-keysound'
-
-Plug 'w0rp/ale'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'sirver/ultisnips'
-" Plug 'tpope/vim-surround'
-
-Plug 'leafgarland/typescript-vim'
-Plug 'flowtype/vim-flow'
-" Plug 'jparise/vim-graphql'
-Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-markdown'
-
+Plug 'Quramy/tsuquyomi' " typescript
+Plug 'StanAngeloff/php.vim'
 Plug 'airblade/vim-gitgutter'
-
-Plug 'tpope/vim-fugitive'
-
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'cocopon/svss.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'flowtype/vim-flow'
+Plug 'groenewege/vim-less'
+Plug 'guns/xterm-color-table.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'maralla/completor.vim'
-
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
-
-Plug 'Quramy/tsuquyomi'
-Plug 'jason0x43/vim-js-indent'
-" Plug 'vim-scripts/jQuery'
-" Plug 'ervandew/supertab'
 Plug 'kana/vim-fakeclip'
-Plug 'tomtom/tcomment_vim'
-Plug 'vim-scripts/YankRing.vim'
-Plug 'groenewege/vim-less'
-" Plug 'Shougo/neocomplcache.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
-" Plug 'vim-syntastic/syntastic'
-" Plug 'KabbAmine/zeavim.vim'
-" Plug 'ashisha/image.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'rking/ag.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'StanAngeloff/php.vim'
-Plug 'shawncplus/phpcomplete.vim'
-Plug 'rkitover/vimpager'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'easymotion/vim-easymotion'
+Plug 'tomtom/tcomment_vim'
 
-" Plug 'mxw/vim-jsx'
+Plug 'rkitover/vimpager'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown'
+Plug 'vim-scripts/YankRing.vim'
+" Plug 'w0rp/ale'
 
 call plug#end()

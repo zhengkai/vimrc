@@ -2,10 +2,12 @@
 
 inoremap ( <c-r>=OpenPair('(')<CR>
 inoremap ) <c-r>=ClosePair(')')<CR>
-inoremap { {<CR>}<Up><ESC>A
+" inoremap { {<CR>}<Up><ESC>A
+inoremap { {}<ESC>i
 inoremap } <c-r>=ClosePair('}')<CR>
 inoremap [ <c-r>=OpenPair('[')<CR>
 inoremap ] <c-r>=ClosePair(']')<CR>
+
 " just for xml document, but need not for now.
 "inoremap < <c-r>=OpenPair('<')<CR>
 "inoremap > <c-r>=ClosePair('>')<CR>
@@ -78,4 +80,3 @@ function! CompleteQuote(quote)
         return a:quote . a:quote . "\<Left>"
     endif
 endfunction
-

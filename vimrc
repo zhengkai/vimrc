@@ -76,7 +76,7 @@ set undolevels=1000
 set undoreload=10000
 
 " 自动完成
-so ~/.vim/complete.vim
+" so ~/.vim/complete.vim
 
 " 配色
 so ~/.vim/style.vim
