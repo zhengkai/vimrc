@@ -14,11 +14,7 @@ set t_8f=[38;2;%lu;%lu;%lum
 
 syntax on
 
-let g:fzf_action = {
-	\ 'enter': 'vsplit',
-	\ 'ctrl-t': 'tabedit',
-	\ 'ctrl-x': 'split',
-	\ }
+so ~/.vim/fzf.vim
 
 let g:keysound_enable = 1
 " 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
