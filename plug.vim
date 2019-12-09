@@ -36,22 +36,25 @@ Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'flowtype/vim-flow'
-Plug 'groenewege/vim-less'
-Plug 'guns/xterm-color-table.vim'
+"Plug 'groenewege/vim-less'
+"Plug 'guns/xterm-color-table.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Plug 'ludovicchabant/vim-gutentags'
+
 Plug 'kana/vim-fakeclip'
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
 Plug 'pangloss/vim-javascript'
 Plug 'rking/ag.vim'
 Plug 'tomtom/tcomment_vim'
 
-Plug 'rkitover/vimpager'
+"Plug 'rkitover/vimpager'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
 Plug 'vim-scripts/YankRing.vim'
+Plug 'dense-analysis/ale'
 " Plug 'w0rp/ale'
 
 call plug#end()
