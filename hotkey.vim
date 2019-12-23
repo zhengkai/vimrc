@@ -8,6 +8,11 @@ inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
 " alt + left
 map <Esc>[1;3D :echo yes
 
+" YCM 函数 preview 窗口，及关闭
+nnoremap <silent> <Esc>h :YcmCompleter GetDoc<CR>
+nnoremap <silent> <Esc>j :pclose<CR>
+
+" 兼容 F3 按错
 nnoremap <silent> <Esc>3 :TagbarToggle<CR>
 
 " 防止误操作

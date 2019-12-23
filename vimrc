@@ -18,8 +18,8 @@ so ~/.vim/fzf.vim
 
 " YCM 自动完成时显示函数参数，两种方式，不显示或者自动关
 "
-" set completeopt-=preview
-let g:ycm_autoclose_preview_window_after_completion = 1
+set completeopt-=preview
+" let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:keysound_enable = 1
 " 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
