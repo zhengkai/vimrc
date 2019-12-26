@@ -35,6 +35,7 @@ Plug 'cocopon/svss.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'govim/govim'
 Plug 'flowtype/vim-flow'
 "Plug 'groenewege/vim-less'
 "Plug 'guns/xterm-color-table.vim'

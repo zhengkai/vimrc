@@ -49,6 +49,11 @@ let g:lightline.tabline = {
 " let g:lightline.separator    = { 'left': '', 'right': '' }
 let g:lightline.subseparator = { 'left': '│', 'right': '│' }
 
+let g:lightline.component = {
+\   'fileformat': ' %{&ff}',
+\   'fileencoding': '%{&fenc!=#""?&fenc:&enc} ',
+\ }
+
 let g:lightline.active = {
 \ 'left': [
 \   [ 'mode', 'paste' ],
@@ -63,11 +68,6 @@ let g:lightline.active = {
 \   [ 'percent' ],
 \   [ 'fileformat', 'fileencoding' ],
 \ ],
-\ }
-
-let g:lightline.component = {
-\   'fileformat': ' %{&ff}',
-\   'fileencoding': '%{&fenc!=#""?&fenc:&enc} ',
 \ }
 
 function! FileSize()
@@ -167,8 +167,8 @@ set laststatus=2
 set numberwidth=6
 set sidescrolloff=10
 "
-hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
-hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
+" hi StatusLine   ctermfg=16  ctermbg=39  cterm=none
+" hi StatusLineNC ctermfg=16  ctermbg=24  cterm=none
 hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "
 "hi MarkWord1 ctermbg=61  ctermfg=253
@@ -181,6 +181,9 @@ hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "" QuickFix
 "hi qfFileName cterm=none ctermfg=228
 "hi qfLineNr cterm=none ctermfg=120
+
+hi ALEErrorSign   guifg=#9B154F guibg=#9B154F
+hi ALEWarningSign guifg=#4F000B guibg=#4F000B
 
 "cnoremap ttab call ToggleIndentGuides()
 function! ToggleIndentGuides()

@@ -11,6 +11,8 @@ map <Esc>[1;3D :echo yes
 " YCM 函数 preview 窗口，及关闭
 nnoremap <silent> <Esc>h :YcmCompleter GetDoc<CR>
 nnoremap <silent> <Esc>j :pclose<CR>
+nnoremap <silent> <Esc>t :YcmCompleter GetType<CR>
+autocmd FileType javascript nnoremap <silent> <C-]> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " 兼容 F3 按错
 nnoremap <silent> <Esc>3 :TagbarToggle<CR>

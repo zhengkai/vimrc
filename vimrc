@@ -1,6 +1,8 @@
 set nocompatible
 set backspace=indent,eol,start
 
+set viminfo+=n~/.vim/.viminfo
+
 " swap 文件保存地址
 set directory=$HOME/.tmp/vim-swap//
 
@@ -17,15 +19,10 @@ syntax on
 so ~/.vim/fzf.vim
 
 " YCM 自动完成时显示函数参数，两种方式，不显示或者自动关
-"
 set completeopt-=preview
 " let g:ycm_autoclose_preview_window_after_completion = 1
 
-let g:keysound_enable = 1
-" 设置默认音效主题，可以选择：default, typewriter, mario, bubble, sword
-let g:keysound_theme = 'typewriter'
-" let g:keysound_py_version = 3
-let g:keysound_volume = 500
+let g:ycm_show_diagnostics_ui = 0
 
 let g:XtermColorTableDefaultOpen = 'vsplit'
 
@@ -38,9 +35,10 @@ let g:jsx_ext_required = 0
 
 " let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
-
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_set_highlights = 0
+let g:ale_sign_error = 'X'
+let g:ale_sign_warning = '!'
+let g:ale_sign_column_always = 1
 
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
