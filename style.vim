@@ -24,13 +24,12 @@ set termencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 " set ambiwidth=double
 
-"
 try
 	colorscheme night-owl
-	catch
-		let g:jellybeans_background_color = '000000'
-		let g:jellybeans_background_color_256 = '000000'
-		so ~/.vim/jellybeans.vim
+catch
+	let g:jellybeans_background_color = '000000'
+	let g:jellybeans_background_color_256 = '000000'
+	so ~/.vim/jellybeans.vim
 endtry
 
 hi Normal guibg=#000000
