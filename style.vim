@@ -181,6 +181,8 @@ hi VertSplit    ctermfg=238 ctermbg=238 cterm=none
 "hi qfFileName cterm=none ctermfg=228
 "hi qfLineNr cterm=none ctermfg=120
 
+hi htmlTag guifg=#4EC9B0
+
 hi ALEErrorSign   guifg=#9B154F guibg=#9B154F
 hi ALEWarningSign guifg=#4F000B guibg=#4F000B
 
