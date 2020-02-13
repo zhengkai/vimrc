@@ -171,6 +171,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 " so ~/.vim/tango.vim
 " let g:tango_dir += ['/www/']
 
+so ~/.vim/make.vim
+
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
