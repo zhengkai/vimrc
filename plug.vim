@@ -29,6 +29,10 @@ Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --g
 " Plug 'junegunn/vim-easy-align'
 " Plug 'StanAngeloff/php.vim'
 
+Plug 'mattn/emmet-vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'cakebaker/scss-syntax.vim'
+
 Plug 'Quramy/tsuquyomi' " typescript
 Plug 'airblade/vim-gitgutter'
 Plug 'cocopon/svss.vim'

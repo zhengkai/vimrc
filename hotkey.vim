@@ -1,8 +1,8 @@
-nnoremap <Esc>t "=strftime("%F %T")<CR>Pl
-inoremap <Esc>t <C-R>=strftime("%F %T")<CR>
+nnoremap <C-T> "=strftime("%F %T")<CR>P
+inoremap <C-T> <C-R>=strftime("%F %T")<CR>
 
-nnoremap <C-x> iZheng Kai <zhengkai@gmail.com><Esc>l
-inoremap <C-x> Zheng Kai <zhengkai@gmail.com>
+nnoremap <C-X> iZheng Kai <zhengkai@gmail.com><Esc>l
+inoremap <C-X> Zheng Kai <zhengkai@gmail.com>
 
 " https://stackoverflow.com/a/27206531/966103
 " alt + left
@@ -26,8 +26,9 @@ nmap <F1> <nop>
 nmap <F4> <ESC>:%s/<C-v><C-m>//g<Enter>
 
 " 通过文件传 yank
-nmap <C-Y> :call writefile(split(@@, "\n", 1), $HOME . '/.tmp/vimclip')<CR>
-nmap <C-I> :r $HOME/.tmp/vimclip<CR>
+" Alt+y Alt+i
+nmap <Esc>y :call writefile(split(@@, "\n", 1), $HOME . '/.tmp/vimclip')<CR>
+nmap <Esc>i :r $HOME/.tmp/vimclip<CR>
 
 " 执行当前文件
 nmap <S-U> :!clear && %:p<CR>
@@ -62,3 +63,8 @@ map! <C-F> <Esc>gUiw`]a
 
 " git blame
 nmap <S-B> :Gblame<CR>
+
+" emmet 自动完成
+nnoremap , :call emmet#expandAbbr(3,"")<cr>
+inoremap , <c-r>=emmet#util#closePopup()<cr><c-r>=emmet#expandAbbr(0,"")<cr>
+vnoremap , :call emmet#expandAbbr(3,"")<cr>
