@@ -66,5 +66,5 @@ nmap <S-B> :Gblame<CR>
 
 " emmet 自动完成
 nnoremap , :call emmet#expandAbbr(3,"")<cr>
-inoremap , <c-r>=emmet#util#closePopup()<cr><c-r>=emmet#expandAbbr(0,"")<cr>
-vnoremap , :call emmet#expandAbbr(3,"")<cr>
+"inoremap , <c-r>=emmet#util#closePopup()<cr><c-r>=emmet#expandAbbr(0,"")<cr>
+"vnoremap , :call emmet#expandAbbr(3,"")<cr>

@@ -23,7 +23,8 @@ set guifont=Ubuntu\ Mono\ 14
 
 set encoding=utf-8
 set termencoding=utf-8
-set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
+set fileencodings=utf-8
+" set fileencodings=ucs-bom,utf-8,gbk,cp936,latin1
 " set ambiwidth=double
 
 try
