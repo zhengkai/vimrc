@@ -1,8 +1,8 @@
 nnoremap <C-T> "=strftime("%F %T")<CR>P
 inoremap <C-T> <C-R>=strftime("%F %T")<CR>
 
-nnoremap <C-X> iZheng Kai <zhengkai@gmail.com><Esc>l
-inoremap <C-X> Zheng Kai <zhengkai@gmail.com>
+" nnoremap <C-X> iZheng Kai <zhengkai@gmail.com><Esc>l
+" inoremap <C-X> Zheng Kai <zhengkai@gmail.com>
 
 " https://stackoverflow.com/a/27206531/966103
 " alt + left

@@ -17,6 +17,7 @@ set t_8f=[38;2;%lu;%lu;%lum
 syntax on
 
 so ~/.vim/fzf.vim
+so ~/.vim/go.vim
 
 " YCM 自动完成时显示函数参数，两种方式，不显示或者自动关
 set completeopt-=preview
@@ -217,6 +218,10 @@ inoremap <C-U> <C-G>u<C-U>
 if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
 	set t_Co=16
 endif
+
+augroup filetype
+  au! BufRead,BufNewFile *.proto setfiletype proto
+augroup end
 
 au FileType gitcommit
  \ hi gitcommitSummary ctermfg=red ctermbg=red
