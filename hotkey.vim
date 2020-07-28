@@ -8,6 +8,8 @@ inoremap <C-T> <C-R>=strftime("%F %T")<CR>
 " alt + left
 map <Esc>[1;3D :echo yes
 
+nnoremap <silent> <Esc>f :let @+=expand('%:p')<CR>
+
 " YCM 函数 preview 窗口，及关闭
 nnoremap <silent> <Esc>h :YcmCompleter GetDoc<CR>
 nnoremap <silent> <Esc>j :pclose<CR>
