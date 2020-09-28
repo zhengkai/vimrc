@@ -7,7 +7,7 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'haishanh/night-owl.vim'
 
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer --java-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer --go-completer --ts-completer' }
 
 " Plug 'KabbAmine/zeavim.vim'
 " Plug 'Shougo/neocomplcache.vim'
