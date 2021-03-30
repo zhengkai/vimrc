@@ -27,7 +27,7 @@ let g:ycm_show_diagnostics_ui = 0
 
 let g:XtermColorTableDefaultOpen = 'vsplit'
 
-let g:EasyMotion_leader_key = '['
+let g:EasyMotion_leader_key = "'"
 let g:EditorConfig_exec_path = '/usr/bin/editorconfig'
 let g:jsx_ext_required = 0
 " let g:syntastic_javascript_checkers = ['eslint']
