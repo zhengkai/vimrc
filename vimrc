@@ -6,6 +6,11 @@ set viminfo+=n~/.vim/.viminfo
 " swap 文件保存地址
 set directory=$HOME/.tmp/vim-swap//
 
+let g:ycm_gopls_binary_path = '/go/bin/gopls'
+let g:ycm_gopls_args = ['-remote=auto']
+let g:go_gopls_options = ['-remote=auto']
+let g:ale_go_gopls_options = '-remote=auto'
+
 so ~/.vim/plug.vim
 
 map ;; <Plug>(easymotion-s)
