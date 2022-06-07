@@ -80,7 +80,7 @@ endfunction
 
 let g:lightline.component_function = {
 \   'filesize': 'FileSize',
-\   'gitbranch': 'fugitive#head',
+\   'gitbranch': 'FugitiveHead',
 \ }
 
 let g:lightline.inactive = {
